@@ -2,11 +2,98 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Sedona</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a href="index.html"><img src="img/index-logo.png" width="100" height="100" alt="Логотип Sedona"></a>
+            <ul class="site-navigation">
+                <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+                <li><a href="gallary.html">ФОТО И ВИДЕО</a></li>
+                <li><a href="map.html">КАРТА ШТАТА</a></li>
+                <li><a href="hotel.html">ГОСТИНИЦА</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="Welcome">
+            <h1 class="hidden-caption">SEDONA</h1>
+            <img src="img/welcome.png" width="1000" height="400" alt="Приветственное сообщение">
+        </section>
+        <section class="about">
+            <p class="about-text">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В КАЛИФОРНИИ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+        </section>
+        <section class="advantages">
+            <h2 class="hidden-caption">Приемущества</h2>
+            <p class="advantages-text">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+            <ul class="advantages-list">
+                <li class="advatages-list-image">
+                    <h2 class="advantages-header">НАСТОЯЩИЙ ГОРОДОК</h2>
+                    <p class="advanteges-list-number">- №1 -</p>
+                    <p class="advantages-text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                    <img src="img/advantages1.jpg" width="250" height="100" alt="Дома города">
+                </li>
+                <li class="advantage-list-chit">
+                    <h2 class="advantages-header-black">ЖИЛЬЕ</h2>
+                    <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+                <li class="advantage-list-chit">
+                    <h2 class="advantages-header-black">ЕДА</h2>
+                    <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                <li class="advantage-list-chit">
+                    <h2 class="advantages-header-black">СУВЕНИРЫ</h2>
+                    <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                </li>
+                <li class="advatages-list-image">
+                    <h2 class="advantages-header">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+                    <p class="advanteges-list-number">- №2 -</p>
+                    <p class="advantages-text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+                    <img src="img/advantages1.jpg" width="250" height="100" alt="Мост дьявола">
+                </li>
+                <li class="advantage-list-chit2">
+                    <h2 class="advantages-header-black">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                    <p class="advanteges-list-number">- №3 -</p>
+                    <p сlass="advantages-text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+                </li>
+                <li class="advantage-list-chit2">
+                    <h2 class="advantages-header-black">КРАСИВАЯ ДОРОГА</h2>
+                    <p class="advanteges-list-number">- №4 -</p>
+                    <p сlass="advantages-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС_ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+                </li>
+                <li class="advantage-list-chit2">
+                    <h2 class="advantages-header-black">МАЛО ТУРИСТОВ</h2>
+                    <p class="advanteges-list-number">- №5 -</p>
+                    <p сlass="advantages-text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬЕН И ТОЛПИТСЯ ТАМ</p>
+                </li>
+        </section>
+        <section class="find-hotel">
+            <h2 class="hidden-caption">Поиск отеля</h2>
+            <b>ЗАИНТЕРЕСОВАЛИСЬ?</b>
+            <p class="find-hotel-text">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+            <a href="modal-window" class="modal-window" >ПОИСК ГОСТИННИЦЫ В СЕДОНЕ</a>
+        </section>
+        <section class="map">
+            <h2 class="hidden-caption">Карта</h2>
+            <img src="img/map.jpg" width="1000" height="300" alt="Карта Седоны">
+            <section class="modal-window">
+              <h2 class="hidden-caption">Форма модального окна</h2>
+                <!--Тут будет модальное окно с формой поиска отеля-->
+            </section>
+        </section>
+        <footer class="main-footer">
+            <dvi class="social-tag">
+                <b>#VISITSEDONA</b>
+            </dib>
+            <div class="social-footer">
+                <ul>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <a class="button" href="https://htmlacademy.ru">WEBSITE BY</a>
+        </footer>
+    </main>
   </body>
 </html>
