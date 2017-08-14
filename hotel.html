@@ -19,88 +19,112 @@
     <main class="container">
         <section class="filter">
           <h2 class="hidden-caption">Фильтр отелей</h2>
-          <!--Форма фильтрации со списком инфраструктура-->
-          <!--Форма фильтрации со типов жилья-->
-          <!--Форма фильтрации стоимости-->
+          <form class="filter" method="get" action="">
+            <fieldset class="filter-infastr">
+              <legend>Инфраструктуры:</legend>
+              <ul class="filte-items-infr">
+                <li class="filter-items-descr">
+                  <input>Бассейн
+                </li>
+                <li class="filter-items-descr">
+                  <input>Парковка
+                </li>
+                <li class="filter-items-descr">
+                  <input>WiFi
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-type">
+              <legend>Тип жилья:</legend>
+              <ul class="filte-items-type">
+                <li class="filter-items-descr">
+                  <input>Гостинница
+                </li>
+                <li class="filter-items-descr">
+                  <input>Отель
+                </li>
+                <li class="filter-items-descr">
+                  <input>Аппартаменты
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-coast">
+              <legend>Стоимость в сутки(Р):</legend>
+              <div class="min-coast">От 0</div>
+              <div class="max-coast">До 3000</div>
+              <input>Аппартаменты
+              <button type="submit" class="submit-filter">Показать</button>
+            </fieldset>
+          </form>
         </section>
         <section class="find-total">
-          <h2 class="hidden-caption">Итог поиска</h2>
-          <p class="total-item">
+          <h3 class="hidden-caption">Итог поиска</h3>
+          <div class="total-item">
             <b>НАЙДЕНО:</b>
             <b>3</b>
-          </p>
-          <!--Форма фильтрации сортировки-->
+          </div>
+          <div class="item-sort">
+            <p class="item-sort-descr">Сортировка:</p>
+            <p class="item-sort-type">По цене</p>
+            <p class="item-sort-type">По типу</p>
+            <p class="item-sort-type">По рейтингу</p>
+          </div>
+          <div class="up-down-sort">
+            <b class="sort-up"></b>
+            <b class="sort-down"></b>
+          </div>
         </section>
         <section class="finded-items">
-        <h2 class="hidden-caption">Найденные элементы</h2>
-          <ul class class="list-items">
-            <li>
-              <ul class="item">
-                <li><img src="img/amara.jpg" width="40" height="20"></li>
-                <li><h2 class="item-name">AMARA RESORT & SPA</h2></li>
-                <li><p class="item-type">ГОСТИННИЦА</p>
-                    <p class="item-price">ОТ 3500 Р.</p>
-                </li>
-                <li><a href="#">Подробнее</a>
-              </ul>
-              <ul class="rating">
-                <li>
-                  <div class="star"></div>
-                </li>
-                <li>
-                  <p class="rating-number">РЕЙТИНГ:8,5</p>
-                </li>
-              </ul>
-              <ul class="rating">
-                <li>
-                  <div class="star"></div>
-                </li>
-                <li>
-                  <p class="rating-number">РЕЙТИНГ:8,5</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-             <ul class="item">
-                <li><img src="img/amara.jpg" width="40" height="20"></li>
-                <li><h2 class="item-name">DESERT QUALIL INN</h2></li>
-                <li><p class="item-type">МОТЕЛЬ</p>
-                    <p class="item-price">ОТ 2000 Р.</p>
-                </li>
-                <li><a href="#">Подробнее</a>
-              </ul>
-              <ul class="rating">
-                <li>
-                  <div class="star"></div>
-                </li>
-                <li>
-                  <p class="rating-number">РЕЙТИНГ:8,5</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="item">
-                <li><img src="img/amara.jpg" width="40" height="20"></li>
-                <li><h2 class="item-name">VILLAS AT POCO DIABLo</h2></li>
-                <li><p class="item-type">АПАРТАМЕНТЫ</p>
-                    <p class="item-price">ОТ 4000 Р.</p>
-                </li>
-                <li><a href="#">Подробнее</a>
-              </ul>
-              <ul class="rating">
-                <li>
-                  <div class="star"></div>
-                </li>
-                <li>
-                  <p class="rating-number">РЕЙТИНГ:8,5</p>
-                </li>
-              </ul>
-            </li>
-        </ul>
+         <h2 class="hidden-caption">Найденные элементы</h2>
+          <ul class="list-items">
+           <li>
+            <div class="list-items-left">
+              <img src="img/amara.jpg" width="40" height="20">
+              <h3 class="item-name">AMARA RESORT & SPA</h3>
+              <p class="item-type">ГОСТИННИЦА</p>
+              <p class="item-price">ОТ 3500 Р.</p>
+              <a href="amara.html">Подробнее</a>
+              <a href="by.html">Забронировать</a>
+            </div>
+            <div class="list-items-right">
+              <p class="star"></p>
+              <p class="rating-number">РЕЙТИНГ:8,5</p>
+            </div>
+           </li>
+           <li>
+            <div class="list-items-left">
+              <img src="img/desert.jpg" width="40" height="20">
+              <h3 class="item-name">ADESERT QUALIL INN</h3>
+              <p class="item-type">Мотель</p>
+              <p class="item-price">ОТ 2000 Р.</p>
+              <a href="amara.html">Подробнее</a>
+              <a href="by.html">Забронировать</a>
+            </div>
+            <div class="list-items-right">
+              <p class="star"></p>
+              <p class="rating-number">РЕЙТИНГ:8,9</p>
+            </div>
+           </li>
+           <li>
+            <div class="list-items-left">
+              <img src="img/amara.jpg" width="40" height="20">
+              <h3 class="item-name">VILLAS AT POCO DIABLo</h3>
+              <p class="item-type">Аппартаменты</p>
+              <p class="item-price">ОТ 4000 Р.</p>
+              <a href="amara.html">Подробнее</a>
+              <a href="by.html">Забронировать</a>
+            </div>
+            <div class="list-items-right">
+              <p class="star"></p>
+              <p class="rating-number">РЕЙТИНГ:9,2</p>
+            </div>
+           </li>
+          </ul>
+        </section>
         <footer class="main-footer">
-            <dvi class="social-tag">
+            <div class="social-tag">
                 <b>#VISITSEDONA</b>
-            </dib>
+            </div>
             <div class="social-footer">
                 <ul>
                     <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -110,6 +134,7 @@
             </div>
             <p class="footer-copyright">
                 <a class="button" href="https://htmlacademy.ru">WEBSITE BY</a>
+            </p>
         </footer>
     </main>
   </body>
