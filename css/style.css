@@ -1,0 +1,51 @@
+body{
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.238;
+  text-align: center;
+  position: absolute;
+  left: 321.024px;
+  top: 651.646px;
+  width: 440px;
+  height: 48px;
+  z-index: 63;
+}
+
+h3.advantages-header {
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  position: absolute;
+  left: 487.062px;
+  top: 1218.15px;
+  width: 284px;
+  height: 79px;
+  z-index: 77;
+}
+h3.item-name{
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.238;
+  text-align: left;
+  position: absolute;
+  left: 212px;
+  top: 413.15px;
+  width: 210px;
+  height: 16px;
+  z-index: 61;
+}
+
+
+
+
+
