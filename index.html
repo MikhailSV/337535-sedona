@@ -135,15 +135,45 @@
             </div>
             <div class="social-footer">
                 <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
                 </ul>
             </div>
             <p class="footer-copyright">
                 <a class="button" href="https://htmlacademy.ru">WEBSITE BY</a>
             </p>
         </footer>
+        <section class="modal find-hotel">
+          <h3 class="visually-hidden">Форма поиска отеля</h3>
+          <form class="finding-form" method="get" action="">
+           <ul>
+             <li>
+               <label class="find-form-text" for="">Дата заезда:</label>
+               <input class="date-come-in" id="date-in" type="date" name="date" placeholder="24 апреля 2017">
+               <button type="submit" class="calendar"><section class="visability-hidden">Открыть календарь</section></button>
+             </li>
+             <li>
+               <label class="find-form-text" for="">Дата выезда:</label>
+               <input class="date-come-out" id="date-out" type="date" name="date" placeholder="4 июля 2017">
+               <button type="submit" class="calendar"><section class="visability-hidden">Открыть календарь</section></button>
+             </li>
+             <li>
+               <label class="find-form-text" for="">Взрослые:</label>
+               <input class="adult" id="count-adult" type="number" name="number" placeholder="2">
+               <button type="submit" class="add-item">-</button>
+               <button type="submit" class="add-item">+</button>
+             </li>
+             <li>
+               <label class="find-form-text" for="">Дети:</label>
+               <input class="children" id="count-children" type="number" name="number" placeholder="0">
+               <button type="submit" class="add-item">-</button>
+               <button type="submit" class="add-item">+</button>
+              </li>
+           </ul>
+           <button type="submit" class="submit-find">Показать</button>
+          </form>
+        </section>
     </main>
   </body>
 </html>

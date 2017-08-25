@@ -23,15 +23,18 @@
           <form class="filter" method="get" action="">
             <fieldset class="filter-infastr">
               <legend>Инфраструктуры:</legend>
-              <ul class="filte-items-infr">
+              <ul class="filter-items-infr">
                 <li class="filter-items-descr">
-                  <input>Бассейн
+                  <label class="find-form-text" for="pool">Бассейн</label>
+                  <input id="pool" class="filter-items-checkbox" type="checkbox" name="pool" checked>
                 </li>
                 <li class="filter-items-descr">
-                  <input>Парковка
+                  <label class="find-form-text" for="parking">Парковка</label>
+                  <input id="parking" class="filter-items-checkbox" type="checkbox" name="parking">
                 </li>
                 <li class="filter-items-descr">
-                  <input>WiFi
+                  <label class="find-form-text" for="wifi">WiFi</label>
+                  <input id="wifi" class="filter-items-checkbox" type="checkbox" name="wifi">
                 </li>
               </ul>
             </fieldset>
@@ -39,13 +42,16 @@
               <legend>Тип жилья:</legend>
               <ul class="filte-items-type">
                 <li class="filter-items-descr">
-                  <input>Гостинница
+                  <label class="find-form-text" for="hostelry">Гостинница</label>
+                  <input id="hostelry" class="filter-items-checkbox" type="checkbox" name="hostelry" checked>
                 </li>
                 <li class="filter-items-descr">
-                  <input>Отель
+                  <label class="find-form-text" for="hotel">Отель</label>
+                  <input id="hotel" class="filter-items-checkbox" type="checkbox" name="hotel" checked>
                 </li>
                 <li class="filter-items-descr">
-                  <input>Аппартаменты
+                  <label class="find-form-text" for="apartments">Аппартаменты</label>
+                  <input id="apartments" class="filter-items-checkbox" type="checkbox" name="apartments" checked>
                 </li>
               </ul>
             </fieldset>
@@ -53,7 +59,7 @@
               <legend>Стоимость в сутки(Р):</legend>
               <div class="min-coast">От 0</div>
               <div class="max-coast">До 3000</div>
-              <input><!--тут ползунок-->
+              <input type="range" min="0" max="3000" step="1" name="range" value="50">
               <button type="submit" class="submit-filter">Показать</button>
             </fieldset>
           </form>
@@ -71,8 +77,8 @@
             <a class="item-sort-type">По рейтингу</a>
           </div>
           <div class="up-down-sort">
-            <a class="sort-up"></a>
-            <a class="sort-down"></a>
+            <a class="sort-up"><b class="visually-hidden">Сортировать по возрастанию</b></a>
+            <a class="sort-down"><b class="visually-hidden">Сортировать по убыванию</b></a>
           </div>
         </section>
         <section class="finded-items">
@@ -128,9 +134,9 @@
             </div>
             <div class="social-footer">
                 <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
                 </ul>
             </div>
             <p class="footer-copyright">
