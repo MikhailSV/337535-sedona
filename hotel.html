@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Sedona</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -22,7 +24,7 @@
           <h2 class="hidden-caption">Фильтр отелей</h2>
           <form class="filter" method="get" action="">
             <fieldset class="filter-infastr">
-              <legend>Инфраструктуры:</legend>
+              <legend class="filter-legent">Инфраструктуры:</legend>
               <ul class="filter-items-infr">
                 <li class="filter-items-descr">
                   <label class="find-form-text" for="pool">Бассейн</label>
@@ -39,7 +41,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter-type">
-              <legend>Тип жилья:</legend>
+              <legend class="filter-legent">Тип жилья:</legend>
               <ul class="filte-items-type">
                 <li class="filter-items-descr">
                   <label class="find-form-text" for="hostelry">Гостинница</label>
@@ -56,7 +58,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter-coast">
-              <legend>Стоимость в сутки(Р):</legend>
+              <legend class="filter-legent">Стоимость в сутки(Р):</legend>
               <div class="min-coast">От 0</div>
               <div class="max-coast">До 3000</div>
               <input type="range" min="0" max="3000" step="1" name="range" value="50">
@@ -90,8 +92,8 @@
               <h3 class="item-name">AMARA RESORT & SPA</h3>
               <p class="item-type">ГОСТИННИЦА</p>
               <p class="item-price">ОТ 3500 Р.</p>
-              <a href="amara.html">Подробнее</a>
-              <a href="by.html">Забронировать</a>
+              <a class="more" href="amara.html">Подробнее</a>
+              <a class="book-it" href="by.html">Забронировать</a>
             </div>
             <div class="list-items-right">
               <p class="star"></p>
@@ -104,8 +106,8 @@
               <h3 class="item-name">ADESERT QUALIL INN</h3>
               <p class="item-type">Мотель</p>
               <p class="item-price">ОТ 2000 Р.</p>
-              <a href="amara.html">Подробнее</a>
-              <a href="by.html">Забронировать</a>
+              <a class="more" href="amara.html">Подробнее</a>
+              <a class="book-it" href="by.html">Забронировать</a>
             </div>
             <div class="list-items-right">
               <p class="star"></p>
@@ -118,8 +120,8 @@
               <h3 class="item-name">VILLAS AT POCO DIABLo</h3>
               <p class="item-type">Аппартаменты</p>
               <p class="item-price">ОТ 4000 Р.</p>
-              <a href="amara.html">Подробнее</a>
-              <a href="by.html">Забронировать</a>
+              <a class="more" href="amara.html">Подробнее</a>
+              <a class="book-it" href="by.html">Забронировать</a>
             </div>
             <div class="list-items-right">
               <p class="star"></p>
@@ -134,13 +136,13 @@
             </div>
             <div class="social-footer">
                 <ul>
-                    <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-                    <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-                    <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+                    <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"><span class="visually-hidden">Твиттер</span></a></li>
+                    <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li><a class="social-button" href="#"><img src="img/youtube.svg" alt="Ютуб"><span class="visually-hidden">Ютуб</span></a></li>
                 </ul>
             </div>
             <p class="footer-copyright">
-                <a class="button" href="https://htmlacademy.ru">WEBSITE BY</a>
+                <a class="button" href="https://htmlacademy.ru">WEBSITE BY<img src="img/"></a>
             </p>
         </footer>
     </main>
