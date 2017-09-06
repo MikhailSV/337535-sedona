@@ -14,6 +14,11 @@ body{
   text-transform: uppercase;
   text-decoration: none;
 }
+header{list-style: none;
+outline-color: darkred;
+outline-width: 2px;
+outline-style:solid;}
+.site-navigation{list-style: none;}
 a {
   text-decoration: none;
 }
@@ -44,6 +49,9 @@ a {
 .advantages-with-img{
   background-color: #81b3d2;
 }
+  .advantages-with-img1{
+  background-color: #81b3d2;
+}
 .advantages{
   color: #333333;
   font-size: 14px;
@@ -60,6 +68,14 @@ a {
   color: #ffffff;
   font-weight: normal;
 }
+.advantages-text {
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+}
+
+
+
 .advantage-list-chit2{
   font-size: 14px;
   color: #333333;
@@ -69,6 +85,7 @@ a.modal-window{
   background-color: #766357;
   font-size: 21px;
   color: #ffffff;
+  padding:35px 140px;
 }
 
 .book-it{
@@ -129,8 +146,9 @@ legend.filter-legent{
 
 .welcome{
  background-image: url('../img/background_image.jpg');
- width: 1200px;
- height: 506px;
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 510px;
 }
 .find-form-text{
   color: #ffffff;
@@ -234,3 +252,151 @@ input:focus {
   font-size:21px;
   font-weight:bold;
 }
+
+.advantages-with-img1 h3{
+  color:#ffffff;
+  font-size:21px;
+  font-weight:bold;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.advantages-text {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+  .advantages-text-middle {
+    font-size: 14px;
+    font-weight: normal;
+    color:#333333}
+
+/*Сетки*/
+.main-header {
+  display:flex;
+}
+
+.main-navigation{
+  display:flex;
+  width:1056px;
+  height:56px;
+  margin: 0 auto;
+  position:relative;
+   }
+
+.main-navigation a:hth-child(1) {
+outline-color:blue;
+outline-width: 2px;
+outline-style:solid;}
+
+.site-navigation {outline-color:green;
+outline-width: 2px;
+outline-style:solid;}
+
+.main-navigation a.logo{
+  position:absolute;
+  left:460px;
+  z-index: 1;
+  text-align: left;
+}
+.site-navigation{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.site-navigation a{
+  display:block;
+  margin-right:147px;
+}
+
+.site-navigation li:hth-child(1){
+  margin-right:147px;
+  }
+.site-navigation li:hth-child(2){
+  margin-right:388px;
+  }
+
+
+.site-navigation li:nth-child(4){
+  margin-right:0;
+  }
+  .welcome img{
+    display:block;
+    margin: 0 auto;
+    padding-top:77px;
+  }
+  .advantages-with-img{
+  display:flex;
+  justify-content: space-between;
+  }
+
+  .advantages-with-img1{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  }
+
+
+.container-text-advanteges{
+  padding-left: 60px;
+  padding-right: 60px;
+  vertical-align: middle;
+  padding-top: 45px;
+
+}
+.container-img-advanteges {
+  line-height: 0;
+  font-size:0;
+}
+.advanteges-item {
+  display:flex;
+  flex-wrap: wrap;
+  height:330px;
+  flex-direction:row-reverse;
+}
+.advanteges-item-description {
+  width:400px;
+  vertical-align: middle;
+}
+.advanteges-item-img {
+  line-height: 0;
+  font-size:0;
+  display:inline-block;
+  height: 77px;
+  padding-top:56px;
+}
+.advanteges-item-chit {
+  display:flex;
+  flex-wrap: wrap;
+  background-color: #eeeeee;
+  vertical-align: middle;
+  height:255px;
+}
+.advantage-list-chit2{
+  width:400px;
+  padding-top:50px;
+}
+.find-hotel {
+  display:flex;
+  height:290px;
+  flex-direction: column-reverse;
+  vertical-align:middle;}
+
+a.modal-window {
+  order:1;
+  width:568px;
+  height:86px;
+  padding:35px 139px 35px 139px;
+  margin: 0 auto;
+  }
+.find-hotel-text{
+  order:2;
+}
+  .find-header-black{
+    order:3;
+    font-size:30px;
+    font-weight:bold;
+  }
