@@ -434,7 +434,7 @@ a.modal-window {
 .advantages-text-middle {
   padding-bottom:57px;
 }
-.find-hotel, .advanteges-item, .about, .advantages{
+.find-hotel, .advanteges-item, .about, .advantages{ 
   background-color:#ffffff;
 }
 
@@ -444,9 +444,9 @@ a.modal-window {
   position: absolute;
   top:0;
   left:293px;
-  min-width:570px;
+  width:616px;
   background-color:#ffffff;
-
+ 
 
 }
 
@@ -461,7 +461,7 @@ a.modal-window {
   background-color: rgba(255, 255, 255, 0.8);
   min-width:1200px;
   justify-content: space-around;
-
+ 
 }
 
 .social-tag {
@@ -473,20 +473,13 @@ a.modal-window {
   margin-bottom: auto;
 }
 .social-footer {
-
+  
   list-style: none;
   display: inline-block;
   /*display:flex;
   flex-wrap: wrap;*/
-
+  
 }
 
 /*.social-footer ul:nth-child(1) {
   margin-right:10px;}*/
-  input.find-form-text {
-    background-color: #f2f2f2;
-    border-shadow:none;
-    border:none;
-    outline:none;
-
-  }
