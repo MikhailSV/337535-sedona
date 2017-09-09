@@ -143,6 +143,8 @@ legend.filter-legent{
 }
 
 .filter{
+  display:flex;
+  height:218px;
   background-image: url('../img/filter_background.png');
 }
 
@@ -589,6 +591,10 @@ margin-top: auto;
 .container-count-people{
   display:flex;
   }
+  .container-adult, .container-children {
+  padding: 0;
+  margin:0;
+}
 
 .container-adult input, .container-children input{
   text-align: center;
@@ -605,16 +611,16 @@ margin-top: auto;
   color: #81b3d2;
 }
 .container-adult {
-  padding-left:55px;
+  padding-left:66px;
   padding-right:53px;
 
 }
 .container-adult label {
-  padding-right:41px;
+  padding-right:31px;
 }
 
 .container-children label {
-  padding-right:27px;
+  padding-right:28px;
 }
 
 .container-adult, .container-children {
@@ -704,9 +710,7 @@ p.item-sort-descr{
 a.by-type, a.by-rating {
 border-bottom: 1px dotted #81b3d2;
 }
-.filter-container {
-  display:flex;
-  height:218px;}
+
 .up-down-sort {position:relative;}
 .sort-up, .sort-down {
 
@@ -790,22 +794,19 @@ p.rating-number {
 
 }
 /*Фильтры*/
-.infastr-container, .type-container, .coast-container{
+ .type-container, .coast-container{
   display:flex;
   flex-direction:column;
 
 }
-.infastr-container, .type-container {
+ .type-container {
 padding:0;
 margin: 0;
 }
-.infastr-container {
-  padding-right:82px;
-  padding-left:57px;
-}
 
 
-.infastr-container, .type-container{
+
+.type-container{
   padding-top:32px;
   font-weight:bold;
   display:flex;
@@ -816,22 +817,44 @@ margin: 0;
   border: none;
 
 }
-label.find-form-text{
-  color: white;
-  font-weight: normal;
-  margin-bottom: 29px;
 
-}
 
-fieldset.filter-type {border:0;}
-fieldset.filter-infastr {border:0;}
+fieldset.filter-type {
+font-weight: bold;
+border:0;
+padding-top: 32px;}
+fieldset.filter-infastr{
+  border:0;
+padding-top:32px;
+  font-weight:bold;}
 li.filter-items-descr {text-align: left;
 display:block;
 }
+
+
+.find-form-text {
+  position:relative;
+}
+
+.find-form-text::before {
+  position:absolute;
+  content: "";
+
+  width: 23px;
+  height: 23px;
+  top: -5px;
+  left: -40px;
+display:block;
+background-image: url('../img/checkbox-off.svg');
+background-repeat: no-repeat;
+}
+.filter input[type="checkbox"]:checked + .find-form-text::before {backgorund-image: url('../img/checkbox-on.svg');}
 /*-----------*/
 
 
-
+.social-button {display: block;
+padding-top: 12px;
+margin-left:5px;}
 
 
 
