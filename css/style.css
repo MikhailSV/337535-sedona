@@ -836,19 +836,19 @@ display:block;
   position:relative;
 }
 
-.find-form-text::before {
+.filter .find-form-text::before {
   position:absolute;
   content: "";
 
-  width: 23px;
-  height: 23px;
+  width: 28px;
+  height: 28px;
   top: -5px;
   left: -40px;
 display:block;
 background-image: url('../img/checkbox-off.svg');
 background-repeat: no-repeat;
 }
-.filter input[type="checkbox"]:checked + .find-form-text::before {backgorund-image: url('../img/checkbox-on.svg');}
+.filter input[type="checkbox"]:checked + .find-form-text::before {background-image: url('../img/checkbox-on.svg');}
 /*-----------*/
 
 
