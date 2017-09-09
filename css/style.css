@@ -307,9 +307,6 @@ input.date-come-in, input.date-come-out, input.adult, input.children{
 
 .main-navigation{
   display:flex;
-  /*width:1056px;
-  height:56px;
-  margin: 0 auto;*/
   position:relative;
   width:100%;
    }
@@ -634,7 +631,26 @@ padding-left: 11px;
   height:48px;
   background-color:#81b3d2;
 }
-
+.button-academy-svg {
+width:116px;
+height:41px;
+}
+.button-academy:active path{
+  fill:#000000;
+}
+.button-academy:hover path {
+  fill:#81b3d2;
+}
+.footer-copyright {
+  font-size:14px;
+  font-weight: normal;
+  vertical-align: top;
+  display:flex;
+  width:199px;
+}
+.web-site-link {
+  padding-top: 15px;
+padding-right:8px;}
 
   /*Hotel*/
   ul {
@@ -653,18 +669,312 @@ padding-left: 11px;
   padding-right:10px;
 }
 
-.total-item {margin-left:73px;}
+.total-item {
+  margin-left:73px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right:50px;
+  }
+  .item-sort-descr{
+    margin-top: auto;
+  margin-bottom: auto;
+  }
 
 .item-sort {
   display:flex;
-  margin-top:42px;
+  margin-top:auto;
+  margin-bottom:auto;
 }
-.find-total {
+.container-total-item {
   display: flex;
-  min-width:1200px;
-  flex-wrap: wrap;
+  width:100%;
+  height:87px;
+  background-color:white;
+
+}
+p.item-sort-descr{
+  margin-right: 39px;
+}
+.item-sort-type{
+  margin-right:33px;
+}
+ a.by-price {
+  color: #a8c9df;
+}
+a.by-type, a.by-rating {
+border-bottom: 1px dotted #81b3d2;
+}
+.filter-container {
+  display:flex;
+  height:218px;}
+.up-down-sort {position:relative;}
+.sort-up, .sort-down {
+
+  position:absolute;
+
+}
+.up-down-sort{
+  display:flex;
+  }
+.sort-up{
+  bottom:37px;
+right:97px;
+}
+.sort-down{
+  bottom:37px;
+right:73px;
+}
+.up-down-sort{
+  margin-left:auto;
+  }
+
+
+.sort-up:hover path, .sort-down:hover path {
+  fill:#000000;
+}
+.sort-up:active path, .sort-down:hover path {
+  fill:#81b3d2;
+}
+/*----HOTELS DESCRIPTION--*/
+.list-items {
+  width:100%;
+  height:151px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  display:flex;
+  padding:0;
+  background-color:white;
+}
+
+
+.item-type, .item-price, .item-type, .item-name{
+margin: 0;
+    padding: 0;
+
 
 }
 
-.item-sort-type, item-sort-descr {padding:0;
+.description-item{
+  width:270px;
+  text-align:left;
+  margin-left:30px;
+  padding:0;
+  padding-top:20px;
+}
+.img-item {
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left:73px;
+}
+
+.price-with-item{
+  display: flex;
+  width:100%;
+
+}
+.price-with-item {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  line-height: 0;
+}
+.list-items-right{
+  padding:0;
+  margin-left:auto;
+  padding-right:74px;
+  margin-top:64px;
+}
+p.rating-number {
+  padding:0;
+  margin:0;
+  padding: 6px 9px 13px 16px;
+
+}
+/*Фильтры*/
+.infastr-container, .type-container, .coast-container{
+  display:flex;
+  flex-direction:column;
+
+}
+.infastr-container, .type-container {
+padding:0;
+margin: 0;
+}
+.infastr-container {
+  padding-right:82px;
+  padding-left:57px;
+}
+
+
+.infastr-container, .type-container{
+  padding-top:32px;
+  font-weight:bold;
+  display:flex;
+}
+
+.filter-legent {
+  font-size:16px;
+  border: none;
+
+}
+label.find-form-text{
+  color: white;
+  font-weight: normal;
+  margin-bottom: 29px;
+
+}
+
+fieldset.filter-type {border:0;}
+fieldset.filter-infastr {border:0;}
+li.filter-items-descr {text-align: left;
+display:block;
+}
+/*-----------*/
+
+
+
+
+
+
+
+/*Filtr slozhniy*/
+body {
+  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
+
+
+}
+
+.filter-range {
+  width: 330px;
+
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
