@@ -849,6 +849,9 @@ background-image: url('../img/checkbox-off.svg');
 background-repeat: no-repeat;
 }
 .filter input[type="checkbox"]:checked + .find-form-text::before {background-image: url('../img/checkbox-on.svg');}
+.ferst-item {margin-right:32px;}
+.second-item{margin-right:70px;}
+.therd-item{margin-right: 19px}
 /*-----------*/
 
 
