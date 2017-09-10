@@ -8,7 +8,6 @@
 html {
   box-sizing: border-box;
 }
-
 body{
   font-size: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -272,7 +271,10 @@ input:focus {
   color: #ffffff;
   font-weight: normal;
 }
+ 
+
   .advantages-text-middle {
+    margin:0;
     font-size: 14px;
     font-weight: normal;
     color:#333333;}
@@ -344,7 +346,7 @@ input.date-come-in, input.date-come-out, input.adult, input.children{
     text-align: left;
     padding-left: 6%;
     padding-right: 6%;
-    width:30%;
+    width:21%;
     margin-right:auto;
  }
  .site-navigation li:nth-child(3) {
@@ -411,7 +413,12 @@ input.date-come-in, input.date-come-out, input.adult, input.children{
   font-size:0;
   display:inline-block;
   padding-top:56px;
+  
 }
+.advanteges-item-description .present {
+  padding:0;
+  padding-top:50px;
+  }
 .advanteges-item-chit {
   display:flex;
   flex-wrap: wrap;
@@ -439,6 +446,17 @@ a.modal-window {
   }
 .find-hotel-text{
   order:2;
+  padding:0;
+  padding-bottom:54px;
+}
+.modal-window{
+  font-weight: bold;
+}
+.submit-find {
+  font-weight: bold;
+}
+.add-item {
+  font-weight: bold;
 }
   .find-header-black{
     order:3;
@@ -456,6 +474,7 @@ a.modal-window {
   padding-bottom:40px;
 }
 .advantages-text-middle {
+  margin:0;
   background-color:#ffffff;
   padding-bottom:57px;
 }
@@ -469,8 +488,8 @@ a.modal-window {
 .modal-find-hotel {
   position: absolute;
   top:0;
-  left:315px;
-  min-width:570px;
+  left:312.5px;
+  min-width:574.500px;
   min-height:396px;
   background-color:#ffffff;
 
@@ -616,7 +635,7 @@ margin-top: auto;
 
 }
 .container-adult label {
-  padding-right:31px;
+  padding-right:34px;
 }
 
 .container-children label {
@@ -741,7 +760,7 @@ right:73px;
 }
 /*----HOTELS DESCRIPTION--*/
 .list-items {
-  width:100%;
+  min-width:100%;
   height:151px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
@@ -860,15 +879,32 @@ padding-top: 12px;
 margin-left:5px;}
 
 
+.filter-infastr {
+  padding-left:55px;
+  
+}
 
+.filter-legent {
+  
+  margin:0;
+  padding:0;
+  padding-top:30px;
+  padding-left:14px;
+  }
+
+ul.filter-items-infr li{
+  padding-top:0;
+  padding-bottom:0;
+  padding-bottom:12px;
+  }
+ul.filte-items-type li{
+  padding-top:0;
+  padding-bottom:0;
+  padding-bottom:12px;
+}
 
 /*Filtr slozhniy*/
-body {
-  font-weight: 400;
-  font-family: "PT Sans", Arial, sans-serif;
 
-
-}
 
 .filter-range {
   width: 330px;
@@ -877,6 +913,16 @@ body {
   color: #ffffff;
   text-transform: uppercase;
 }
+
+.find-form-text{
+  color:white;
+}
+
+.filter-range {
+  margin-left:346px;
+  padding-top:30px;
+}
+.advanteges-item-description .present
 
 .filter-range-title {
   margin-bottom: 9px;
@@ -1003,4 +1049,41 @@ body {
   color: #000000;
 
   background: #ffffff;
+}
+
+
+
+.list-items-right {
+  position:relative;
+  }
+  .star, .star2, .star3 {position:absolute;
+  right: 0;
+  bottom: 0;
+  }
+  .filter-range box-sizing:content-box
+
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 5px;
+}
+.price-controls .min-price, .price-controls .max-price {
+    width: 150px;
+    padding-left: 35px;
+}
+.price-controls .max-price {
+    width: 150px;
+    padding-left: 35px;
+}
+div.filter-range-title{
+  font-size:16px;
+padding-top:0;
+}
+.filter-range-title{
+  padding-bottom:14px;
+}
+.filter-items-infr{
+  color:white;
+}
+label.find-form-text{
+  color:white;
 }

@@ -54,7 +54,7 @@
               <p class="advanteges-descr">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
             </div>
             <div class="advanteges-item-description">
-              <img class="advanteges-item-img" src="img/icon-2.svg">
+              <img class="present" src="img/icon-2.svg">
               <h3 class="advanteges-header">СУВЕНИРЫЕ</h3>
               <p class="advanteges-descr">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
             </div>
@@ -102,16 +102,16 @@
             <form class="finding-form" method="get" action="">
             <div class="container-date-in">
                 <label class="find-form-text" for="">Дата заезда:</label>
-                <input class="date-come-in" id="date-in" type="date" name="date" placeholder="24 апреля 2017">
-                <button type="submit" class="calendar"><section class="visually-hidden">Открыть календарь</section>
+                <input class="date-come-in" id="date-in" type="text" name="date" placeholder="24 апреля 2017">
+                <button type="button" class="calendar"><span class="visually-hidden">Открыть календарь</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#cccccc"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#cccccc"/>
                   </svg>
                 </button>
               </div>
               <div class="container-date-out">
                 <label class="find-form-text" for="">Дата выезда:</label>
-                <input class="date-come-out" id="date-out" type="date" name="date" placeholder="4 июля 2017">
-                <button type="submit" class="calendar2"><section class="visually-hidden">Открыть календарь</section>
+                <input class="date-come-out" id="date-out" type="text" name="date" placeholder="4 июля 2017">
+                <button type="button" class="calendar"><span class="visually-hidden">Открыть календарь</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#cccccc"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#cccccc"/>
                   </svg>
                 </button>
@@ -119,18 +119,18 @@
               <div class="container-count-people">
               <div class="container-adult">
                 <label class="find-form-text" for="">Взрослые:</label>
-                <button type="submit" class="add-item">-</button>
-                <input class="adult" id="count-adult" type="text" name="number" placeholder="2">
-                <button type="submit" class="add-item">+</button>
+                <button type="button" class="add-item">-</button>
+                <input class="adult" id="count-adult" type="text" name="number" value="2">
+                <button type="button" class="add-item">+</button>
               </div>
               <div class="container-children">
                 <label class="find-form-text" for="">Дети:</label>
                 <button type="submit-add" class="add-item">-</button>
-                <input class="children" id="count-children" type="text" name="number" placeholder="0">
+                <input class="children" id="count-children" type="text" name="number" value="0">
                 <button type="submit-add" class="add-item">+</button>
               </div>
               </div>
-            <button type="submit" class="submit-find">Найти</button>
+            <button type="button" class="submit-find">Найти</button>
             </form>
           </div>
                   <!--Окончание модального окна-->
