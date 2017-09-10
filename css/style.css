@@ -657,9 +657,8 @@ input {
 }
 .total-item {
     margin-left: 73px;
-    margin-top: auto;
-    margin-bottom: auto;
     margin-right: 42px;
+    padding-top: 30px
 }
 .item-sort {
     display: flex;
@@ -740,9 +739,8 @@ a.by-rating {
     padding-top: 25px;
 }
 .img-item {
-    margin-top: auto;
-    margin-bottom: auto;
     margin-left: 73px;
+    padding-top: 30px;
 }
 .price-with-item {
     display: flex;
