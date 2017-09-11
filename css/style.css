@@ -478,14 +478,13 @@ a.modal-window {
     background-color: rgba(255, 255, 255, 0.9);
     min-height: 128px;
     justify-content: space-between;
-    padding-left: 132px;
-    padding-right: 97px;
 }
 .main-footer-margin {
     margin-top: -128px;
 }
 .social-tag {
     padding-top: 47px;
+    width:33%;
 }
 .footer-copyright {
     width:33%;
