@@ -490,22 +490,27 @@ a.modal-window {
 .footer-copyright {
     padding-top: 42px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400;
     display: flex;
-    width: 199px;
+    width: 33%;
+    justify-content: center;
 }
 .social-footer {
-    width: 150px;
-    margin-left: 9%;
-    margin-right: 6%;
+    width: 33%;
 }
 .social-footer-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 38px;
     width: 100%;
-    padding:0;
+    padding: 0;
+}
+.social-list-item {
+    margin-right: 6px;
+}
+.social-footer-list li:last-child {
+    margin-right: 0;
 }
 input.date-come-in,
 .date-come-out,
