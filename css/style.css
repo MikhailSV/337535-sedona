@@ -132,7 +132,7 @@ button.submit-find {
 }
 .filter {
     min-height: 219px;
-    background-image: url('../img/filter_background.png');
+    background-image: url('../img/filter_background.jpg');
 }
 .filter-form {
     display: flex;
@@ -212,14 +212,6 @@ button.submit-find {
     background-color: #5496bd;
     color: #94b9d2;
 }
-.sort-up:hover,
-.sort-down:hover {
-    background-color: #231f20;
-}
-.sort-up:active,
-.sort-down:active {
-    background-color: #81b3d2;
-}
 .social-button:hover,
 .submit-find:hover {
     background-color: #669ec0;
@@ -288,7 +280,7 @@ input.children {
 }
 input.date-come-in,
 input.date-come-out {
-    padding-left: 12px;
+    padding-left: 13px;
     padding-right: 40px;
 }
 .container-date-in,
@@ -311,6 +303,8 @@ input.date-come-out {
     display: flex;
     position: relative;
     width: 100%;
+    padding-right:6%;
+    padding-left:6%;
 }
 .main-navigation a.logo {
     position: absolute;
@@ -328,27 +322,21 @@ input.date-come-out {
 }
 .site-navigation li:nth-child(1) {
     text-align: left;
-    padding-left: 6%;
-    padding-right: 6%;
     width: 20%;
 }
 .site-navigation li:nth-child(2) {
     text-align: left;
-    padding-left: 6%;
-    padding-right: 6%;
-    width: 21%;
+    width: 20%;
     margin-right: auto;
+    padding-left: 30px
 }
 .site-navigation li:nth-child(3) {
     text-align: right;
-    padding-left: 6%;
-    padding-right: 6%;
     width: 20%;
+    padding-right: 33px;
 }
 .site-navigation li:nth-child(4) {
     text-align: right;
-    padding-left: 6%;
-    padding-right: 6%;
     width: 20%;
 }
 .welcome img {
@@ -507,17 +495,17 @@ a.modal-window {
     width: 199px;
 }
 .social-footer {
-    width: 170px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 150px;
+    margin-left: 9%;
+    margin-right: 6%;
 }
 .social-footer-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-top: 36px;
+    margin-top: 38px;
     width: 100%;
-    padding-left: 24px;
+    padding:0;
 }
 input.date-come-in,
 .date-come-out,
@@ -548,7 +536,7 @@ button.submit-add {
 }
 .date-come-in,
 .date-come-out {
-    width: 346px;
+    width: 347px;
     height: 38px;
 }
 .children,
@@ -582,7 +570,7 @@ button.submit-add {
 }
 .container-count-people {
     display: flex;
-    margin-bottom: 53px;
+    margin-bottom: 54px;
 }
 .container-adult input,
 .container-children input {
@@ -620,6 +608,14 @@ button.submit-add {
 .container-date-in label,
 .container-date-out label {
     padding-top: 11px;
+}
+.container-date-in label {
+    padding-right: 17px;
+    padding-left: 2px; 
+}
+.container-date-out label {
+    padding-right: 14px;
+    padding-left: 2px;
 }
 .social-button {
     width: 46px;
@@ -685,6 +681,16 @@ a.by-type,
 a.by-rating {
     border-bottom: 1px dotted #81b3d2;
 }
+a.by-type:hover,
+a.by-rating:hover {
+    border-bottom: 1px dotted #81b3d2;
+    color: #81b3d2;
+}
+a.by-type:active,
+a.by-rating:active {
+    border-bottom: none;
+    color: #6b6b6b;
+}
 .up-down-sort {
     position: relative;
 }
@@ -706,6 +712,7 @@ a.by-rating {
 .up-down-sort {
     margin-left: auto;
 }
+/*--Style for sorting--*/
 .sort-up:hover path,
 .sort-down:hover path {
     fill: #000000;
@@ -817,7 +824,6 @@ li.filter-items-descr {
 .social-button {
     display: block;
     padding-top: 12px;
-    margin-right: 5px;
 }
 .filter-infastr {
     padding-left: 71px;
