@@ -880,6 +880,7 @@ ul.filte-items-type li {
     font: inherit;
     background: none;
     border: none;
+    line-height:18px;
 }
 .range-controls {
     position: relative;
@@ -946,7 +947,7 @@ ul.filte-items-type li {
     background-position: right;
 }
 .star {
-    background-image: url('../img/star4.png');
+    background-image: url('../img/star4.jpg');
     right: 71px;
     top: 28px;
 }
